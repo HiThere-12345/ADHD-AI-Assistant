@@ -1,0 +1,45 @@
+<html lang="en"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lifelock - Whitelist Sites</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="options.css" rel ="stylesheet">
+</head>
+
+<body>
+    <div id="sidebar" class="d-flex flex-column p-3">
+        <h2>Lifelock</h2>
+        <hr>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a class="nav-link" href="options.html">Daily Tasks</a>
+            </li>
+            <!-- Add more sidebar items here -->
+        </ul>
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" href="options-whitelist.html">Whitelist</a>
+            </li>
+            <!-- Add more sidebar items here -->
+        </ul>
+    </div>
+
+    <div id="main-content">
+        <h3>Whitelist</h3>
+        <i><h6>In whitelist mode, ONLY these sites can be accessed, before your daily sites are completed. This mode is the default mode. Checking a box will unwhitelist it until unchecked.</h6></i>
+        <ul id="task-list" class="list-unstyled">
+            <!-- sites will be added here -->
+        </ul>
+        <form id="task-form" class="mt-4">
+            <div class="input-group">
+                <input type="text" id="new-task" class="form-control" placeholder="Add sites to whitelist" required>
+                <button class="btn btn-primary" type="submit">Add site</button>
+            </div>
+        </form>
+    </div>
+    <script src="options-whitelist.js"></script>
+</body>
+
+</html>

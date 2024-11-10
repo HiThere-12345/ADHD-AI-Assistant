@@ -1,0 +1,107 @@
+/* General styles for the popup */
+
+:root {
+  --gradient: linear-gradient(90deg, #ff8a00, #e52e71);
+  --popupWidth: 500px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  width: var(--popupWidth);
+  background-color: #ffffff;
+}
+
+#chat {
+  padding: 10px;
+}
+
+a {
+  color: #eeeeee;
+  text-decoration: none;
+}
+a:hover {
+  color: white;
+}
+
+.initial{
+  height: 50px;
+}
+
+.innerButton{
+  margin: 0px;
+}
+
+button {
+  margin: 10px;
+  border: none;
+  background: var(--gradient);
+  width: calc(var(--popupWidth) - 20px);
+  font-size: 25px;
+  color: white;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: #d43e31;
+}
+
+#chatbox {
+  border: 3px solid #ffdcdc;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #fff8f0;
+  border-radius: 8px;
+}
+
+#user-input {
+  width: 95%; /* or you can set a specific pixel width, e.g., width: 450px; */
+  padding: 10px;
+  border: 1px solid #f95d47;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styles for chat messages */
+#chatbox div {
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+}
+
+#chatbox .user {
+  background-color: #ffdcdc;
+  text-align: left;
+  border-radius: 8px;
+}
+
+#chatbox .chatgpt {
+  background-color: #e6f7e8;
+  text-align: left;
+}
+
+br {
+  display: block;
+  margin: 0px;
+}
+h1 {
+  margin: 0;
+  padding: 0;
+}
+h2{
+  margin: 0;
+  padding: 0;
+}
+h3{
+  margin: 0;
+  padding: 0;
+}
+ol{
+  margin: 0;
+  padding: 0;
+}
